@@ -1,6 +1,7 @@
 body {
-  min-width: 900px;
-  max-width: 1200px;
+  min-width: 1200px;
+  /*min-width: 900px;
+  max-width: 1200px;*/
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -8,4 +9,275 @@ body {
   color: #ffffff;
 
   background: #849d8f;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.wrapper {
+  outline: white 1px solid;
+}
+
+.content-wrapper {
+  outline: yellow 1px solid;
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-header {
+  outline-color: red 1px solid;
+}
+
+.shop-logo {
+  float: left;
+  width: 154px;
+}
+
+.main-navigation {
+  outline: blue 1px solid;
+  float: left;
+  width: 690px;
+}
+
+.main-menu li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.user-block {
+  outline: green 1px solid;
+  float: right;
+  width:267px;
+}
+
+.contacts {
+  float: right;
+  width: 170px;
+}
+
+.promo-slider {
+  outline: green 1px solid;
+}
+
+.banners {
+  outline: blue 1px solid;
+}
+
+.banner {
+  width: 560px;
+  min-height: 229px;
+}
+
+.banner.raspberry {
+  float: left;
+
+  color: #ffffff;
+  background: #b13559 url("../img/raspberry-banner.jpg") no-repeat;
+  background-position: 100% 100%;
+  border-radius: 15px;
+}
+
+.banner.chocolate {
+  float: right;
+
+  color: #ffffff;
+  background: #391d11 url("../img/chocolate-banner.jpg");
+  border-radius: 16px;
+}
+
+.popular-items {
+  outline: orange 1px solid;
+  font-size: 0;
+}
+
+/*.item-img img {
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+}*/
+
+/*   start catalog style   */
+
+.items {
+  outline: blue 1px solid;
+  font-size: 0;
+}
+
+/*   end catalog style   */
+
+.item {
+  outline: green 1px solid;
+  display: inline-block;
+  width: 267px;
+  margin-right: 26px;
+  margin-bottom: 40px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.item:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.item-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.about-us {
+  outline: blue 1px solid;
+  margin-bottom: 40px;
+  color: #000000;
+  background: #f1e6d1;
+}
+
+.index-content {
+  outline: red 1px solid;
+  margin-bottom: 40px;
+}
+
+.blog {
+  outline: blue 1px solid;
+  float: left;
+  width: 560px;
+  min-height: 220px;
+  color: #000000;
+  background: #ffffff url("../img/blog-img.jpg");
+}
+
+.subscribe {
+  outline: blue 1px solid;
+  float: right;
+  width: 560px;
+  min-height: 220px;
+  color: #000000;
+  background: #ffffff;
+}
+
+.contacts {
+  outline: red 1px solid;
+}
+
+/*   start catalog style   */
+
+.breadcrumbs {
+  outline: orange 1px solid;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.catalog-creamy {
+  outline: black 1px solid;
+}
+
+.catalog-creamy-title {
+  outline: grey 1px solid;
+}
+
+.filter {
+  outline: green 1px solid;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.sorting-filter {
+  float: left;
+  width: 193px;
+  margin: 0;
+  margin-right: 16px;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  float: left;
+  width: 218px;
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+  border: none;
+}
+
+.fat-filter {
+  float: left;
+  width: 415px;
+  margin: 0;
+  margin-right: 289px;
+  padding: 0;
+  border: none;
+}
+
+.filler-filter {
+  float: left;
+  width: 702px;
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.filter-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.pagination {
+  width: 190px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+/*   end catalog ctyle     */
+
+.main-footer {
+  outline: blue 1px solid;
+}
+
+.footer-social {
+  outline: green 1px solid;
+  float: left;
+  width: 267px;
+  margin-right: 26px;
+}
+
+.footer-navigation {
+  outline: yellow 1px solid;
+  float: left;
+  width: 560px;
+}
+
+.footer-navigation-production {
+  float: left;
+  width: 150px;
+}
+
+.footer-navigation-documents {
+  float: right;
+  width: 170px;
+}
+
+.footer-copyrigt {
+  outline: orange 1px solid;
+  float: right;
+  width: 267px;
 }
