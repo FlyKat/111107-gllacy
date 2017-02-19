@@ -1373,7 +1373,7 @@ body > input[type="radio"] {
   border: 2px solid #fff;
 }
 
-.filler-filter-filter input:disabled + label::before ,
+.filler-filter-filter input:disabled + label::before {
   color: rgba(255, 255, 255, 0.4);
 }
 
