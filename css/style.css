@@ -8,7 +8,7 @@ body {
   background: #849d8f;
 }
 
-body > input[type="radio"] {
+body > .slider-input {
   display: none;
 }
 

@@ -3,15 +3,17 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <title>Глейси.Главная</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <input type="radio" name="toggle" id="btn-1" checked>
-  <input type="radio" name="toggle" id="btn-2">
-  <input type="radio" name="toggle" id="btn-3">
+  <input class="slider-input" type="radio" name="toggle" id="btn-1" checked>
+  <input class="slider-input" type="radio" name="toggle" id="btn-2">
+  <input class="slider-input" type="radio" name="toggle" id="btn-3">
   <div class="site-wrapper">
     <div class="content-wrapper">
       <header class="main-header clearfix">
@@ -65,10 +67,10 @@
             <div class="login-form-wrapper">
               <!--login popup-->
               <form class="login-form clearfix" action="#" method="post">
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Электронная почта" required>
-                <label for="password">Пароль</label>
-                <input type="text" name="password" id="password" placeholder="Пароль" required>
+                <label for="login-email">Электронная почта</label>
+                <input type="email" name="login-email" id="login-email" placeholder="Электронная почта" required>
+                <label for="login-password">Пароль</label>
+                <input type="text" name="login-password" id="login-password" placeholder="Пароль" required>
                 <button class="btn" type="submit">Вход</button>
                 <div class="login-form-links">
                   <a href="#">Забыли пароль?</a>
@@ -205,8 +207,8 @@
             <div class="subscribe-inside">
               <p class="subscribe-info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="subscribe-form">
-                <label for="email">Электронная почта</label>
-                <input type="email" name="email" placeholder="Электронная почта" required>
+                <label for="subscribe-email">Электронная почта</label>
+                <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта" required>
                 <button class="subscribe-form-btn btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -271,14 +273,15 @@
     <button class="modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
     <h2 class="modal-feedback-title">Мы обязательно вам ответим!</h2>
     <form class="write-us-form" action="#" method="post">
-      <label for="name">Как вас зовут?</label>
-      <input type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+      <label for="modal-name">Как вас зовут?</label>
+      <input type="text" name="modal-name" id="modal-name" placeholder="Как вас зовут?" required>
       <label for="modal-email">Ваша почта для ответа?</label>
-      <input type="email" name="email" id="modal-email" placeholder="Ваша почта для ответа?" required>
-      <label for= "message">Напишите что-нибудь...</label>
-      <textarea name="login" id="message" required>Напишите что-нибудь...</textarea>
+      <input type="email" name="modal-email" id="modal-email" placeholder="Ваша почта для ответа?" required>
+      <label for="message">Напишите что-нибудь...</label>
+      <textarea name="message" id="message" required>Напишите что-нибудь...</textarea>
     </form>
     <button class="modal-btn-send btn" type="submit">Отправить</button>
   </div>
 </body>
+
 </html>
