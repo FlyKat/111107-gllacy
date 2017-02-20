@@ -468,7 +468,7 @@ body > .slider-input {
 .cart-items-wrapper {
   position: absolute;
   display: none;
-  top: 32px;
+  top: 54px;
   right: 0;
   z-index: 5;
 }
@@ -477,13 +477,8 @@ body > .slider-input {
   display: block;
 }
 
-.search:hover .cart-items-wrapper,
-.login:hover .cart-items-wrapper {
-  display: none;
-}
-
 .cart-items {
-  margin-top: 27px;
+  margin-top: 5px;
   padding: 20px 15px 20px 17px;
   width: 508px;
   font-size: 0;
@@ -665,9 +660,9 @@ body > .slider-input {
   cursor: pointer;
 }
 
-#btn-1:checked ~ .site-wrapper #slide1,
-#btn-2:checked ~ .site-wrapper #slide2,
-#btn-3:checked ~ .site-wrapper #slide3 {
+#btn-1:checked ~ .site-wrapper .slide:nth-child(1),
+#btn-2:checked ~ .site-wrapper .slide:nth-child(2),
+#btn-3:checked ~ .site-wrapper .slide:nth-child(3) {
   display: block;
 }
 
