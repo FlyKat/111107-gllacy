@@ -1166,9 +1166,19 @@ body > .slider-input {
   border: none;
 }
 
-.sorting-filter select {
-  padding-left: 15px;
+.select-wrapper {
   width: 193px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.2) url("../img/select.png") no-repeat 170px;
+  overflow: hidden;
+}
+
+.sorting-filter select {
+  padding-right: 25px;
+  padding-left: 15px;
+  width: 237px;
   height: 36px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -1177,12 +1187,18 @@ body > .slider-input {
   box-sizing: border-box;
   border: none;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.select-wrapper:hover   {
+  width: 193px;
+  height: 36px;
+  border: none;
+  background: #fff  url("../img/select-hover.png") no-repeat 170px;
 }
 
 .sorting-filter select:hover {
   color: #323232;
-  background: #fff;
 }
 
 .range-filter {
@@ -1408,6 +1424,7 @@ body > .slider-input {
 
 .filter-btn:focus {
   outline: none;
+  box-shadow: inset 0px 2px 1px 0px #6d6c6d;
 }
 
 .pagination {
